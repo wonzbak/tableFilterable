@@ -35,7 +35,11 @@ For each filter, you have to define:
 - `selector` : This is the jQuery selector of the filter controle, eg the id of an input element
 - `event` : The name of the event which *fire* the filter of the table
 - `callback`: function that determine if a row have to be displayed. This function must return a boolean, `true` if the row shown, `false` if the row is hidden. It takes `$tr` parameter which is the jQuery element of the row, and `filterValue` which is the value of the filter.
-- `delay`: Delay in milliseconds after wich the filtering occurs. Usefull if you have a huge number of rows and/or complex filters. If for examle, you filter is a `<input type="text">` and the event is `onkeypress`, filtering will block while your are typing your value. With a `delay` of 500ms, the filterinf process will occurs after 500ms.
+- `delay`: Delay in milliseconds after wich the filtering occur. Usefull if you have a huge number of rows and/or complex filters. If for examle, you filter is a `<input type="text">` and the event is `onkeypress`, filtering will block while your are typing your value. With a `delay` of 500ms, the filtering process will occur after 500ms.
 
 When the filtering of the table is done, it calls the `onFilterFinished` callback
 with the number of rows hidden and the number of total rows.
+
+
+## Exemples
+Exemples available at <http://wonzbak.github.io/jquery.table-filterable/>
